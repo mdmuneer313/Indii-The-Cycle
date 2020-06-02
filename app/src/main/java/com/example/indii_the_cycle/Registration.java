@@ -31,8 +31,8 @@ import java.util.concurrent.TimeUnit;
 
 public class Registration extends AppCompatActivity {
     FirebaseAuth fAuth;
-    String phoneNumber = "+917451221244";
-    String otpCode = "123456";
+    String phoneNumber = "+919594939291";
+    String otpCode = "333131";
     String verificationId;
     EditText phone,optEnter;
     Button next;
