@@ -46,6 +46,7 @@ public class Registration extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_registration);
         phone = findViewById(R.id.phone);
         optEnter = findViewById(R.id.codeEnter);

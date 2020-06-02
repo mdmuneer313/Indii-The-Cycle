@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/yellowLight"
+    android:background="#DAD7CD"
     tools:context=".MainActivity">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/imageView"
         android:layout_width="150dp"
         android:layout_height="150dp"
@@ -18,7 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-       android:src="@drawable/profile" />
+       android:src="@drawable/profile"/>
 
     <ImageView
         android:id="@+id/imageView3"
