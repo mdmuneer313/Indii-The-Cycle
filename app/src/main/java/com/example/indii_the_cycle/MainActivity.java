@@ -10,6 +10,8 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toolbar;
 
@@ -25,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     FirebaseFirestore fStore;
     TextView fullName,email,phone;
     String mName,mEmail,mPhone;
+    Button logoutBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         fullName = findViewById(R.id.profileFullName);
         email = findViewById(R.id.profileEmail);
         phone = findViewById(R.id.profilePhone);
+        logoutBtn=findViewById(R.id.logoutbtn);
 
         DocumentReference docRef =fStore.collection("users").document(firebaseAuth.getCurrentUser().getUid());
         docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
@@ -71,5 +75,11 @@ public class MainActivity extends AppCompatActivity {
             finish();
         }
         return true;
+    }
+
+    public void logout(View view) {
+        FirebaseAuth.getInstance().signOut();
+        startActivity(new Intent(getApplicationContext(),Registration.class));
+        finish();
     }
 }
