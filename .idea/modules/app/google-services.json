@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "356294737859",
+    "firebase_url": "https://indii-the-cycle-333.firebaseio.com",
+    "project_id": "indii-the-cycle-333",
+    "storage_bucket": "indii-the-cycle-333.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:356294737859:android:436477d91b70ff60fc4776",
+        "android_client_info": {
+          "package_name": "com.example.indii_the_cycle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "356294737859-ibpqfu624pi6ldla01bbl2ldmmictgou.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.indii_the_cycle",
+            "certificate_hash": "6a185ed914cbd13e251789db6456fd64c45ba54b"
+          }
+        },
+        {
+          "client_id": "356294737859-f0uu788r6dj14giud6jk7qb5073db7p2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFYv8QEEJEnJAT-QXzuI95IzX-18VdNjo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "356294737859-f0uu788r6dj14giud6jk7qb5073db7p2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
