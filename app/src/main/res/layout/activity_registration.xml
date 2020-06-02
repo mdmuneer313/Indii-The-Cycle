@@ -7,6 +7,18 @@
     android:background="#e6d00b"
     tools:context=".Registration">
 
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="228dp"
+        android:fontFamily="@font/bungee_regular"
+        android:text="@string/welcome"
+        android:textColor="@color/DarkBlack"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/nextBtn"
@@ -120,7 +132,7 @@
         android:id="@+id/ccp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="76dp"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -130,11 +142,15 @@
         android:id="@+id/imageView"
         android:layout_width="342dp"
         android:layout_height="182dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/cycleimage"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/cycleimage" />
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </ImageView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
