@@ -45,6 +45,7 @@ android:fontFamily="@font/aclonica"
         android:background="@drawable/circle_shape"
         android:ems="10"
         android:hint="  Mobile Number"
+        android:padding="10dp"
         android:inputType="phone"
         android:textColor="#000"
         android:textColorHint="#000"
@@ -78,19 +79,20 @@ android:fontFamily="@font/aclonica"
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="42dp"
+        android:layout_height="36dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
+
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/phone" />
 
     <TextView
         android:id="@+id/state"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_width="215dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="60dp"
         android:layout_marginEnd="8dp"
         android:text="Sending OTP.."
         android:textColor="#FFEB3B"
@@ -98,8 +100,10 @@ android:fontFamily="@font/aclonica"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/progressBar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/progressBar"
-        app:layout_constraintTop_toTopOf="@+id/progressBar" />
+        app:layout_constraintTop_toTopOf="@+id/progressBar"
+        app:layout_constraintVertical_bias="0.458" />
 
     <EditText
         android:id="@+id/codeEnter"
@@ -113,16 +117,17 @@ android:fontFamily="@font/aclonica"
         android:ems="10"
         android:hint="  Enter OTP"
         android:inputType="number"
+        android:padding="10dp"
         android:textColor="#000"
         android:textColorHighlight="#000"
         android:textColorHint="#000"
-        android:visibility="visible"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/phone"
-        app:layout_constraintVertical_bias="0.042" />
+        app:layout_constraintVertical_bias="0.017" />
 
     <TextView
         android:id="@+id/resendOtpBtn"
